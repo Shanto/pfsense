@@ -187,7 +187,8 @@ $status_menu[] = array(gettext("Queues"), "/status_queues.php");
 $status_menu[] = array(gettext("RRD Graphs"), "/status_rrd_graph.php");
 $status_menu[] = array(gettext("Services"), "/status_services.php");
 $status_menu[] = array(gettext("System Logs"), "/diag_logs.php");
-$status_menu[] = array(gettext("Traffic Graph"), "/status_graph.php?if=wan");
+$status_menu[] = array(gettext("Traffic Graph (WAN)"), "/status_graph.php?if=wan");
+$status_menu[] = array(gettext("Traffic Graph (LAN)"), "/status_graph.php?if=lan");
 if(count($config['interfaces']) > 1) 
 	$status_menu[] = array(gettext("UPnP &amp; NAT-PMP"), "/status_upnp.php");
 $ifentries = get_configured_interface_with_descr();
